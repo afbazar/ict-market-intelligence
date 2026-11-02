@@ -73,7 +73,7 @@ function renderMetricGrid() {
  $("#metricGrid").innerHTML = rows.length ? rows.map(item => `<article class="metric-card"><div class="metric-top"><span>${item.geography || "—"}</span><span class="metric-type">${item.data_type || "Fact"}</span></div><h3>${item.name}</h3><strong>${toFa(item.value)} <small>${item.unit || ""}</small></strong><p>سال داده: ${item.year ? toFa(item.year) : "—"} · انتشار: ${item.publication_year ? toFa(item.publication_year) : "—"}</p><div class="metric-source">${item.source_name || "منبع نامشخص"}</div><a href="${item.source_url || "#methodology"}" target="_blank" rel="noopener">منبع و جزئیات ↗</a></article>`).join("") : '<div class="empty-state-inline">شاخص مستندی برای نمایش ثبت نشده است.</div>';
 }
 function renderKpis() {
- const keys = ["ecommerce_value_1403","ecommerce_transactions_1403","active_enamad_1403","e_signature_issued_1403"];
+ const keys = ["internet_users_share_2024","mobile_broadband_per100_2024","mobile_network_4g_coverage_2024","mobile_network_5g_coverage_2024"];
  const map = new Map(indicators.map(item => [item.id,item]));
  document.querySelectorAll("#kpiGrid .kpi-card").forEach((card,index) => {
   const item = map.get(keys[index]);
