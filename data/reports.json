@@ -174,5 +174,24 @@
       "محدودیت",
       "سیاست‌گذاری"
     ]
+  },
+  {
+    "id": "iran-ict-market-baseline-1405",
+    "title": "نمای پایه بازار ICT ایران – نسخه ۱",
+    "publisher": "ICT Market Intelligence – مرکز رشد ICT دانشگاه رازی",
+    "publication_year": 1405,
+    "data_year": 1404,
+    "sector": "telecom",
+    "sector_name": "بازار ICT ایران",
+    "source_type": "research",
+    "url": "https://github.com/afbazar/ict-market-intelligence/blob/main/reports/iran-ict-market-baseline-1405.md",
+    "description": "گزارش پایه شاخص‌های اتصال، پهن‌باند، پوشش شبکه، تجارت الکترونیکی، محدودیت داده‌ها و فرضیه‌های فرصت بازار.",
+    "tags": [
+      "بازار ICT ایران",
+      "زیرساخت",
+      "ITU",
+      "World Bank",
+      "تحلیل بازار"
+    ]
   }
 ]
