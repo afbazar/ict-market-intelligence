@@ -39,7 +39,7 @@ const SOURCES = [
 const $ = (selector) => document.querySelector(selector);
 const toFa = (value) => new Intl.NumberFormat("fa-IR").format(value);
 let indicators = [];
-let reports = [];
+let reports = [];\nlet trendItems = [];
 
 async function loadJson(path, fallback) {
  try { const response = await fetch(path); if (!response.ok) throw new Error("HTTP " + response.status); return await response.json(); }
@@ -65,7 +65,11 @@ function renderSectors() {
  const filtered = SECTORS.filter(item => (type === "all" || item.type === type) && (item.name+" "+item.desc).toLocaleLowerCase("fa").includes(search));
  $("#sectorGrid").innerHTML = filtered.length ? filtered.map(item => `<article class="sector-card"><div class="sector-card-top"><span class="sector-icon">${item.icon}</span><span class="sector-kind">${item.type === "core" ? "هسته ICT" : "اقتصاد دیجیتال"}</span></div><h3>${item.name}</h3><p>${item.desc}</p><a href="#reports" data-sector-filter="${item.id}">مشاهده گزارش‌های حوزه ←</a></article>`).join("") : '<div class="empty-state-inline">حوزه‌ای با این مشخصات پیدا نشد.</div>';
 }
-function renderSignals() { $("#signalGrid").innerHTML = SIGNALS.map(item => `<article class="signal-card"><span class="signal-icon">${item.icon}</span><div><h3>${item.title}</h3><p>${item.desc}</p><span>${item.tag}</span></div></article>`).join(""); }
+function renderSignals() {
+ const icons={"هوش مصنوعی و اتوماسیون":"✳","زیرساخت AI و مراکز داده":"▦","امنیت سایبری":"◈","زیرساخت ارتباطی و تاب‌آوری":"⇄","سیاست‌گذاری و حاکمیت دیجیتال":"⌘","اقتصاد دیجیتال و پلتفرم‌ها":"◉","مهارت و سرمایه انسانی":"✦","مخابرات و خدمات پلتفرمی":"⌁"};
+ const rows=trendItems.length?trendItems:[];
+ $("#signalGrid").innerHTML=rows.length?rows.map((item,index)=>`<article class="signal-card"><span class="signal-icon">${icons[item.category]||"◈"}</span><div><h3>${item.title}</h3><p>${item.iran_relevance}</p><div class="signal-meta"><span class="signal-chip">${item.type}</span><span class="signal-chip">${item.status}</span><span class="signal-chip ${item.priority==="بسیار بالا"||item.priority==="بالا"?"high":""}">اولویت ${item.priority}</span><span class="signal-chip">اطمینان: ${item.confidence}</span></div><details class="signal-details"><summary>شواهد، منابع و موارد پایش ماهانه</summary><p><strong>شواهد مستند</strong></p><ul>${item.evidence.map(e=>`<li>${e.claim} <a href="${e.url}" target="_blank" rel="noopener">${e.source} ↗</a></li>`).join("")}</ul><p><strong>پیام برای شرکت‌های مرکز رشد:</strong> ${item.startup_implication}</p><p><strong>در بازبینی ماهانه بررسی شود:</strong></p><ul>${item.watch_items.map(x=>`<li>${x}</li>`).join("")}</ul><p><strong>روش به‌روزرسانی:</strong> ${item.monthly_update}</p><p><strong>محدودیت شواهد:</strong> ${item.sources_note}</p></details><div class="signal-updated">آخرین بازبینی: ${item.last_reviewed} · ${item.geography}</div></div></article>`).join(""):'<div class="empty-state-inline">فایل data/trends.json بارگذاری نشد.</div>';
+}
 function renderOpportunities() { $("#opportunityGrid").innerHTML = OPPORTUNITIES.map((item,index) => `<article class="opportunity-card"><span class="opp-tag">فرضیه اولیه · ${toFa(index+1)}</span><h3>${item.title}</h3><p>${item.problem}</p><div class="opp-meta"><div>مشتری احتمالی: <strong>${item.buyer}</strong></div><div style="margin-top:5px">گام اعتبارسنجی: <strong>${item.validation}</strong></div></div></article>`).join(""); }
 function renderSources() { $("#sourceList").innerHTML = SOURCES.map(item => `<div class="source-item"><div><strong>${item.name}</strong><small>${item.desc}</small></div><a href="${item.url}" target="_blank" rel="noopener">وب‌سایت ↗</a></div>`).join(""); }
 function renderMetricGrid() {
