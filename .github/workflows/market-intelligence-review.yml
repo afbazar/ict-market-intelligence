@@ -1,0 +1,56 @@
+name: Market intelligence update reminders
+
+on:
+  schedule:
+    # Weekly review: Mondays at 06:00 UTC
+    - cron: "0 6 * * 1"
+    # Monthly review: first day of each month at 06:15 UTC
+    - cron: "15 6 1 * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  create-review-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create weekly review task
+        if: github.event.schedule == '0 6 * * 1'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh issue create --title "مرور هفتگی سیگنال‌های بازار ICT" --label "market-intelligence,weekly-review" --body-file - <<'EOF'
+          ## چک‌لیست مرور هفتگی
+          - [ ] بررسی خبرها و اطلاعیه‌های نهادهای رسمی
+          - [ ] ثبت گزارش‌ها و داده‌های تازه با لینک منبع اصلی
+          - [ ] تفکیک Fact، Calculation و Insight
+          - [ ] ثبت سیگنال‌های جدید و اثر احتمالی آن‌ها بر شرکت‌های مرکز رشد
+          - [ ] بررسی فرصت‌های نیازمند مصاحبه یا اعتبارسنجی
+          - [ ] ثبت تاریخ آخرین بررسی و موارد فاقد داده
+          
+          **قاعده:** این گردش‌کار یادآور و ایجادکننده وظیفه است؛ داده یا تحلیل را بدون بررسی انسانی وارد نمی‌کند.
+          EOF
+      - name: Create monthly review task
+        if: github.event.schedule == '15 6 1 * *'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh issue create --title "به‌روزرسانی ماهانه پایگاه داده و گزارش بازار ICT" --label "market-intelligence,monthly-review" --body-file - <<'EOF'
+          ## چک‌لیست به‌روزرسانی ماهانه
+          - [ ] کنترل انتشار نسخه جدید گزارش‌های رسمی
+          - [ ] به‌روزرسانی شاخص‌ها همراه با سال داده، سال انتشار، واحد و روش‌شناسی
+          - [ ] ثبت تاریخچه مقادیر قبلی و مقادیر جدید؛ حذف نکردن داده‌های تاریخی
+          - [ ] بازبینی نمودارها و کنترل سازگاری واحدها و دامنه‌ها
+          - [ ] تهیه جمع‌بندی ماهانه: رشدها، افت‌ها، ریسک‌ها و فرصت‌ها
+          - [ ] تعیین پیامدهای قابل اقدام برای شرکت‌های مرکز رشد ICT
+          - [ ] انتشار نسخه جدید داده و گزارش در داشبورد
+          
+          **قاعده:** مقادیر فاقد منبع معتبر باید خالی بمانند؛ برآوردها با برچسب Calculation یا Insight و روش روشن ثبت شوند.
+          EOF
+      - name: Manual run guidance
+        if: github.event_name == 'workflow_dispatch'
+        run: echo "برای اجرای دستی، یک اجرای زمان‌بندی‌شده را از مسیر Actions بررسی کنید یا چک‌لیست هفتگی/ماهانه را از Issues بسازید."
