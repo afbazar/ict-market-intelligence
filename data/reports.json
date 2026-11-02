@@ -193,5 +193,158 @@
       "World Bank",
       "تحلیل بازار"
     ]
+  },
+  {
+    "id": "trend-stanford-ai-index-2026",
+    "title": "The 2026 AI Index Report",
+    "publisher": "Stanford HAI",
+    "publication_year": 2026,
+    "data_year": 2025,
+    "sector": "ai",
+    "sector_name": "هوش مصنوعی",
+    "source_type": "official",
+    "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+    "description": "داده‌های روند توانمندی، اقتصاد، پذیرش سازمانی، زیرساخت، مسئولیت‌پذیری و سیاست AI.",
+    "tags": [
+      "هوش مصنوعی",
+      "پذیرش سازمانی",
+      "زیرساخت"
+    ]
+  },
+  {
+    "id": "trend-oecd-ai-skills-2026",
+    "title": "AI and Skills: What We Know So Far",
+    "publisher": "OECD",
+    "publication_year": 2026,
+    "data_year": 2026,
+    "sector": "software",
+    "sector_name": "نرم‌افزار و مهارت",
+    "source_type": "official",
+    "url": "https://www.oecd.org/en/publications/ai-and-skills_f843b352-en/full-report.html",
+    "description": "گزارش مهارت و موانع پذیرش AI در بنگاه‌ها و SMEها.",
+    "tags": [
+      "مهارت",
+      "AI",
+      "SME"
+    ]
+  },
+  {
+    "id": "trend-wef-jobs-2025",
+    "title": "The Future of Jobs Report 2025",
+    "publisher": "World Economic Forum",
+    "publication_year": 2025,
+    "data_year": 2025,
+    "sector": "software",
+    "sector_name": "نرم‌افزار و مهارت",
+    "source_type": "official",
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025",
+    "description": "روندهای مهارتی و تحول اشتغال تا ۲۰۳۰.",
+    "tags": [
+      "مهارت",
+      "اشتغال",
+      "AI"
+    ]
+  },
+  {
+    "id": "trend-gsma-mobile-economy-2026",
+    "title": "The Mobile Economy 2026",
+    "publisher": "GSMA",
+    "publication_year": 2026,
+    "data_year": 2025,
+    "sector": "telecom",
+    "sector_name": "مخابرات و زیرساخت",
+    "source_type": "official",
+    "url": "https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-economy/",
+    "description": "روندهای 5G، AI، امنیت اپراتورها، Open Gateway و اقتصاد موبایل.",
+    "tags": [
+      "مخابرات",
+      "5G",
+      "AI"
+    ]
+  },
+  {
+    "id": "trend-enisa-threat-2026",
+    "title": "ENISA Threat Landscape 2026",
+    "publisher": "ENISA",
+    "publication_year": 2026,
+    "data_year": 2025,
+    "sector": "security",
+    "sector_name": "امنیت سایبری",
+    "source_type": "official",
+    "url": "https://www.enisa.europa.eu/topics/cyber-threats/threat-landscape",
+    "description": "تحلیل تهدیدهای سایبری اروپا بر پایه رخدادهای ۲۰۲۵؛ برای شناخت الگوهای جهانی تهدید.",
+    "tags": [
+      "امنیت سایبری",
+      "باج‌افزار",
+      "زنجیره تأمین"
+    ]
+  },
+  {
+    "id": "trend-cloudflare-iran-may-2026",
+    "title": "Iran's Internet is Partially Restored, Cloudflare Radar Data Shows",
+    "publisher": "Cloudflare",
+    "publication_year": 2026,
+    "data_year": 2026,
+    "sector": "telecom",
+    "sector_name": "مخابرات و زیرساخت",
+    "source_type": "official",
+    "url": "https://blog.cloudflare.com/iran-internet-partially-restored-may-2026/",
+    "description": "تحلیل ترافیک و اتصال اینترنت ایران در رخداد قطعی و بازیابی مه ۲۰۲۶.",
+    "tags": [
+      "ایران",
+      "اتصال",
+      "تاب‌آوری"
+    ]
+  },
+  {
+    "id": "trend-isoc-pulse-iran",
+    "title": "Country Report for Iran",
+    "publisher": "Internet Society Pulse",
+    "publication_year": 2026,
+    "data_year": 2026,
+    "sector": "telecom",
+    "sector_name": "مخابرات و زیرساخت",
+    "source_type": "official",
+    "url": "https://pulse.internetsociety.org/en/reports/IR/",
+    "description": "شاخص‌های به‌روزشونده استفاده، تاب‌آوری، زیرساخت، بازار و امنیت اینترنت ایران.",
+    "tags": [
+      "ایران",
+      "تاب‌آوری",
+      "زیرساخت"
+    ]
+  },
+  {
+    "id": "trend-datareportal-iran-2026",
+    "title": "Digital 2026: Iran",
+    "publisher": "DataReportal / Kepios",
+    "publication_year": 2025,
+    "data_year": 2025,
+    "sector": "digital",
+    "sector_name": "اقتصاد دیجیتال",
+    "source_type": "research",
+    "url": "https://datareportal.com/reports/digital-2026-iran",
+    "description": "برآورد کاربران اینترنت، اتصالات موبایل و هویت‌های شبکه اجتماعی ایران در اکتبر ۲۰۲۵.",
+    "tags": [
+      "ایران",
+      "کاربران",
+      "پلتفرم‌ها"
+    ]
+  },
+  {
+    "id": "trend-freedomhouse-iran-2025",
+    "title": "Freedom on the Net 2025: Iran",
+    "publisher": "Freedom House",
+    "publication_year": 2025,
+    "data_year": 2025,
+    "sector": "digital",
+    "sector_name": "اقتصاد دیجیتال",
+    "source_type": "research",
+    "url": "https://freedomhouse.org/country/iran/freedom-net/2025",
+    "description": "تحلیل محدودیت‌ها، سیاست دسترسی و فضای اینترنت ایران در دوره گزارش.",
+    "tags": [
+      "ایران",
+      "سیاست‌گذاری",
+      "دسترسی"
+    ]
   }
 ]
