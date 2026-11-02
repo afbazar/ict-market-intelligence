@@ -1,0 +1,26 @@
+name: گزارش ماهانه بازار ICT
+description: به‌روزرسانی شاخص‌ها و جمع‌بندی ماهانه
+title: "به‌روزرسانی ماهانه بازار ICT - "
+labels: ["market-intelligence", "monthly-review"]
+body:
+  - type: textarea
+    id: indicators
+    attributes:
+      label: شاخص‌های به‌روزشده
+      description: مقدار، واحد، سال داده، ناشر، عنوان گزارش و پیوند منبع را درج کنید.
+    validations:
+      required: true
+  - type: textarea
+    id: analysis
+    attributes:
+      label: تحلیل تغییرات ماه
+  - type: textarea
+    id: implications
+    attributes:
+      label: پیامد برای شرکت‌های مرکز رشد
+  - type: textarea
+    id: sources
+    attributes:
+      label: منابع و روش‌شناسی
+    validations:
+      required: true
