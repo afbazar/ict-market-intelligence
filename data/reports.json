@@ -1,1 +1,57 @@
-[]
+[
+  {
+    "id": "ir-ecommerce-1403",
+    "title": "گزارش تجارت الکترونیکی ایران در سال ۱۴۰۳",
+    "publisher": "مرکز توسعه تجارت الکترونیکی",
+    "publication_year": 1404,
+    "data_year": 1403,
+    "sector": "ecommerce",
+    "sector_name": "تجارت الکترونیکی",
+    "source_type": "official",
+    "url": "https://ecomotive.ir/wp-content/uploads/2025/10/ec_report1403.pdf",
+    "description": "گزارش سالانه رسمی؛ مرجع شاخص‌های ارزش و تعداد معاملات تجارت الکترونیکی.",
+    "tags": [
+      "تجارت الکترونیکی",
+      "ارزش معاملات",
+      "اینماد",
+      "تراکنش"
+    ]
+  },
+  {
+    "id": "itu-facts-figures-2025",
+    "title": "Measuring digital development: Facts and Figures 2025",
+    "publisher": "International Telecommunication Union (ITU)",
+    "publication_year": 2025,
+    "data_year": 2025,
+    "sector": "telecom",
+    "sector_name": "ارتباطات و اتصال",
+    "source_type": "official",
+    "url": "https://www.itu.int/en/ITU-D/Statistics/Pages/facts/default.aspx",
+    "description": "شاخص‌های جهانی و منطقه‌ای اتصال، استفاده از اینترنت، پهن‌باند، 5G و شکاف دیجیتال.",
+    "tags": [
+      "ITU",
+      "اتصال",
+      "اینترنت",
+      "5G",
+      "شاخص جهانی"
+    ]
+  },
+  {
+    "id": "itu-facts-pdf-2025",
+    "title": "Measuring digital development: Facts and Figures 2025 (PDF)",
+    "publisher": "International Telecommunication Union (ITU)",
+    "publication_year": 2025,
+    "data_year": 2025,
+    "sector": "telecom",
+    "sector_name": "ارتباطات و اتصال",
+    "source_type": "official",
+    "url": "https://www.itu.int/dms_pub/itu-d/opb/ind/D-IND-ICT_MDD-2025-3-PDF-E.pdf",
+    "description": "نسخه PDF گزارش جهانی ITU؛ همراه با روش‌شناسی و نمودارهای شاخص‌های اتصال.",
+    "tags": [
+      "ITU",
+      "PDF",
+      "اینترنت",
+      "روش‌شناسی"
+    ]
+  }
+]
