@@ -53,5 +53,22 @@
       "اینترنت",
       "روش‌شناسی"
     ]
+  },
+  {
+    "id": "ict-market-snapshot-1403-1404",
+    "title": "یادداشت تحلیلی بازار تجارت الکترونیکی ایران بر پایه گزارش ۱۴۰۳",
+    "publisher": "ICT Market Intelligence · مرکز رشد ICT",
+    "publication_year": 1405,
+    "data_year": 1403,
+    "sector": "ecommerce",
+    "sector_name": "تجارت الکترونیکی",
+    "source_type": "research",
+    "url": "https://github.com/afbazar/ict-market-intelligence/blob/main/reports/iran-ecommerce-market-1403.md",
+    "description": "تحلیل شاخص‌های رسمی تجارت الکترونیکی، محدودیت‌های تفسیر و فرصت‌های قابل اعتبارسنجی برای شرکت‌های فناوری.",
+    "tags": [
+      "تحلیل بازار",
+      "تجارت الکترونیکی",
+      "فرصت کسب‌وکار"
+    ]
   }
 ]
