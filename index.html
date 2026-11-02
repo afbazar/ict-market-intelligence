@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14284b">
+  <meta name="description" content="داشبورد هوشمندی بازار فناوری اطلاعات و ارتباطات ایران">
+  <title>هوشمندی بازار ICT | داشبورد تحلیلی</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview" aria-label="صفحه اصلی">
+        <span class="brand-mark">ICT</span>
+        <span><strong>Market Intelligence</strong><small>مرکز هوشمندی بازار فناوری</small></span>
+      </a>
+      <div class="side-label">داشبورد</div>
+      <nav class="nav-list" aria-label="منوی اصلی">
+        <a class="nav-link active" href="#overview" data-section="overview"><span class="nav-icon">◫</span> نمای کلی بازار</a>
+        <a class="nav-link" href="#sectors" data-section="sectors"><span class="nav-icon">▦</span> بخش‌های بازار ICT</a>
+        <a class="nav-link" href="#signals" data-section="signals"><span class="nav-icon">⌁</span> روندها و سیگنال‌ها</a>
+        <a class="nav-link" href="#opportunities" data-section="opportunities"><span class="nav-icon">◇</span> فرصت‌های کسب‌وکار</a>
+        <a class="nav-link" href="#reports" data-section="reports"><span class="nav-icon">▤</span> کتابخانه گزارش‌ها</a>
+        <a class="nav-link" href="#methodology" data-section="methodology"><span class="nav-icon">ⓘ</span> روش‌شناسی و منابع</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-note"><span class="status-dot"></span><div><strong>نسخه اولیه سامانه</strong><small>داده‌ها با منبع و تاریخ ثبت می‌شوند</small></div></div>
+        <div class="sidebar-footer">ICT MARKET INTELLIGENCE <span>v1.0</span></div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="باز کردن منو">☰</button>
+        <div class="breadcrumb">پایگاه دانش بازار <span>/</span> <strong id="breadcrumbTitle">نمای کلی</strong></div>
+        <div class="top-actions">
+          <span class="updated-label"><i></i> پایگاه داده در حال توسعه</span>
+          <a class="text-link" href="#methodology">درباره داده‌ها</a>
+        </div>
+      </header>
+
+      <section class="page-section active" id="overview">
+        <div class="page-heading">
+          <div><div class="eyebrow">IRAN · INFORMATION & COMMUNICATION TECHNOLOGY</div><h1>تصویر کلان بازار ICT</h1><p>داده‌ها، روندها و فرصت‌های بازار فناوری را در یک نمای تحلیلی دنبال کنید.</p></div>
+          <div class="heading-meta"><span class="live-dot"></span> نسخه توسعه‌ای <span class="meta-divider">|</span> <span id="todayDate">—</span></div>
+        </div>
+
+        <div class="notice-bar"><span class="notice-icon">i</span><div><strong>شفافیت داده:</strong> شاخص‌های این نسخه تا زمان ورود داده مستند، به‌صورت «در انتظار داده معتبر» نمایش داده می‌شوند. هیچ عدد نمونه‌ای به‌عنوان آمار واقعی بازار ارائه نشده است.</div></div>
+
+        <div class="section-title-row"><div><h2>شاخص‌های کلیدی بازار</h2><p>نمایی از مهم‌ترین متغیرهای پایش بازار ICT</p></div><span class="section-tag">نمای ملی · ایران</span></div>
+        <div class="kpi-grid" id="kpiGrid">
+          <article class="kpi-card"><div class="kpi-top"><span>ارزش بازار ICT</span><span class="kpi-symbol blue">↗</span></div><strong class="kpi-value">—</strong><div class="kpi-foot">نیازمند داده رسمی و تعریف دامنه بازار</div></article>
+          <article class="kpi-card"><div class="kpi-top"><span>سهم اقتصاد دیجیتال</span><span class="kpi-symbol gold">◉</span></div><strong class="kpi-value">—</strong><div class="kpi-foot">نیازمند شاخص هم‌تعریف و سال پایه</div></article>
+          <article class="kpi-card"><div class="kpi-top"><span>تعداد شرکت‌های فعال</span><span class="kpi-symbol violet">▦</span></div><strong class="kpi-value">—</strong><div class="kpi-foot">نیازمند تعریف شرکت فعال و جامعه آماری</div></article>
+          <article class="kpi-card"><div class="kpi-top"><span>سرمایه‌گذاری بخش</span><span class="kpi-symbol teal">⌁</span></div><strong class="kpi-value">—</strong><div class="kpi-foot">نیازمند تفکیک سرمایه‌گذاری دولتی و خصوصی</div></article>
+        </div>
+
+        <div class="content-grid charts-grid">
+          <article class="panel chart-panel">
+            <div class="panel-heading"><div><h3>روند شاخص‌های بازار</h3><p>مقایسه تغییرات در طول زمان</p></div><span class="chart-type">روند زمانی</span></div>
+            <div class="chart-empty" id="trendEmpty"><span class="empty-chart-icon">⌁</span><strong>هنوز داده سری زمانی ثبت نشده است</strong><p>پس از افزودن داده‌های سالانه در فایل شاخص‌ها، نمودار به‌صورت خودکار ساخته می‌شود.</p></div>
+            <div class="chart-wrap hidden" id="trendWrap"><canvas id="trendChart" aria-label="نمودار روند شاخص‌ها"></canvas></div>
+          </article>
+          <article class="panel chart-panel">
+            <div class="panel-heading"><div><h3>ترکیب بخش‌های ICT</h3><p>مقایسه اندازه یا سهم بخش‌ها</p></div><span class="chart-type">ساختار بازار</span></div>
+            <div class="chart-empty" id="sectorEmpty"><span class="empty-chart-icon">◫</span><strong>داده قابل مقایسه موجود نیست</strong><p>برای جلوگیری از مقایسه شاخص‌های ناهمگون، این نمودار تا ثبت داده معتبر خالی می‌ماند.</p></div>
+            <div class="chart-wrap hidden" id="sectorWrap"><canvas id="sectorChart" aria-label="نمودار ترکیب بخش‌های بازار"></canvas></div>
+          </article>
+        </div>
+
+        <div class="content-grid lower-grid">
+          <article class="panel">
+            <div class="panel-heading"><div><h3>آخرین گزارش‌های ثبت‌شده</h3><p>گزارش‌های رسمی و پژوهشی قابل استناد</p></div><a href="#reports" class="panel-link">مشاهده آرشیو ←</a></div>
+            <div id="recentReports" class="empty-list"><div class="empty-state-inline">هنوز گزارشی در کتابخانه ثبت نشده است.</div></div>
+          </article>
+          <article class="panel">
+            <div class="panel-heading"><div><h3>فرصت‌های در حال بررسی</h3><p>فرضیه‌های اولیه برای اعتبارسنجی بازار</p></div><a href="#opportunities" class="panel-link">همه فرصت‌ها ←</a></div>
+            <div class="opportunity-mini-list">
+              <div class="mini-opportunity"><span class="mini-number">01</span><div><strong>هوش مصنوعی سازمانی</strong><small>فرضیه فرصت · نیازمند اعتبارسنجی تقاضا</small></div></div>
+              <div class="mini-opportunity"><span class="mini-number">02</span><div><strong>امنیت و تاب‌آوری دیجیتال</strong><small>فرضیه فرصت · نیازمند بررسی اندازه بازار</small></div></div>
+              <div class="mini-opportunity"><span class="mini-number">03</span><div><strong>نرم‌افزارهای تخصصی کسب‌وکار</strong><small>فرضیه فرصت · نیازمند مصاحبه مشتری</small></div></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section" id="sectors">
+        <div class="page-heading"><div><div class="eyebrow">MARKET STRUCTURE</div><h1>بخش‌های بازار ICT</h1><p>ساختار بازار را به حوزه‌های قابل تحلیل و مقایسه تقسیم کنید.</p></div></div>
+        <div class="filter-toolbar"><label>جست‌وجوی حوزه <input id="sectorSearch" type="search" placeholder="مثلاً نرم‌افزار، امنیت، مخابرات..."></label><label>نوع حوزه <select id="sectorType"><option value="all">همه حوزه‌ها</option><option value="core">هسته ICT</option><option value="digital">اقتصاد دیجیتال و کاربردها</option></select></label></div>
+        <div class="sector-grid" id="sectorGrid"></div>
+      </section>
+
+      <section class="page-section" id="signals">
+        <div class="page-heading"><div><div class="eyebrow">TRENDS & SIGNALS</div><h1>روندها و سیگنال‌های بازار</h1><p>روندهای فناوری را از شواهد بازار و گزارش‌های معتبر تفکیک کنید.</p></div></div>
+        <div class="notice-bar"><span class="notice-icon">i</span><div>موارد زیر دسته‌های پایش هستند، نه ادعای قطعی درباره اندازه یا سرعت رشد بازار ایران.</div></div>
+        <div class="signal-grid" id="signalGrid"></div>
+      </section>
+
+      <section class="page-section" id="opportunities">
+        <div class="page-heading"><div><div class="eyebrow">BUSINESS OPPORTUNITIES</div><h1>فرصت‌های کسب‌وکار</h1><p>از سیگنال بازار تا مسئله مشتری، مدل درآمدی و آزمایش تجاری.</p></div></div>
+        <div class="opportunity-intro"><div><span class="eyebrow">OPPORTUNITY PIPELINE</span><h2>فرصت، قبل از ایده‌پردازی باید شواهد داشته باشد.</h2><p>این فهرست نقطه شروع تحقیق است. هر فرصت باید با مصاحبه مشتری، داده تقاضا، تحلیل رقبا و امکان پرداخت اعتبارسنجی شود.</p></div><span class="pipeline-count">۳ مسیر اولیه</span></div>
+        <div class="opportunity-grid" id="opportunityGrid"></div>
+      </section>
+
+      <section class="page-section" id="reports">
+        <div class="page-heading"><div><div class="eyebrow">RESEARCH LIBRARY</div><h1>کتابخانه گزارش‌ها</h1><p>منابع رسمی، گزارش‌های صنعتی و پژوهش‌های بازار را جست‌وجو و دسته‌بندی کنید.</p></div></div>
+        <div class="filter-toolbar report-filters"><label>جست‌وجو<input id="reportSearch" type="search" placeholder="عنوان گزارش، ناشر یا کلیدواژه..."></label><label>حوزه<select id="reportSector"><option value="all">همه حوزه‌ها</option></select></label><label>نوع منبع<select id="reportType"><option value="all">همه منابع</option><option value="official">رسمی</option><option value="industry">صنعتی</option><option value="research">پژوهشی</option></select></label></div>
+        <div class="table-container"><table><thead><tr><th>عنوان گزارش</th><th>ناشر</th><th>سال انتشار</th><th>حوزه</th><th>نوع منبع</th><th>دسترسی</th></tr></thead><tbody id="reportTable"><tr><td colspan="6" class="table-empty">هنوز گزارشی ثبت نشده است. فایل data/reports.json را تکمیل کنید.</td></tr></tbody></table></div>
+        <p class="table-note">ثبت گزارش در این نسخه از طریق فایل داده انجام می‌شود؛ پیوند هر گزارش باید به سند اصلی ناشر اشاره کند.</p>
+      </section>
+
+      <section class="page-section" id="methodology">
+        <div class="page-heading"><div><div class="eyebrow">METHODOLOGY & SOURCES</div><h1>روش‌شناسی و منابع</h1><p>قابلیت اعتماد داشبورد به شفافیت تعریف شاخص‌ها و منشأ داده‌ها وابسته است.</p></div></div>
+        <div class="method-grid">
+          <article class="panel method-card"><span class="method-index">01</span><h3>واقعیت گزارش‌شده · Fact</h3><p>عدد یا گزاره‌ای که مستقیماً در منبع اصلی منتشر شده است. باید تعریف، واحد، دوره و صفحه یا جدول مرجع داشته باشد.</p></article>
+          <article class="panel method-card"><span class="method-index">02</span><h3>محاسبه · Calculation</h3><p>مقداری که از داده‌های ثبت‌شده محاسبه شده است. فرمول، ورودی‌ها و فرض‌های محاسبه باید قابل مشاهده باشند.</p></article>
+          <article class="panel method-card"><span class="method-index">03</span><h3>بینش تحلیلی · Insight</h3><p>تفسیر یا فرضیه کارشناسی بر مبنای شواهد. بینش نباید به‌عنوان آمار رسمی یا واقعیت اثبات‌شده عرضه شود.</p></article>
+        </div>
+        <article class="panel source-panel"><div class="panel-heading"><div><h3>نهادها و منابع پیشنهادی برای گردآوری داده</h3><p>برای هر شاخص، نسخه و سند اصلی را بررسی کنید.</p></div></div><div class="source-list" id="sourceList"></div></article>
+        <article class="panel data-contract"><h3>حداقل شناسنامه هر شاخص</h3><div class="contract-grid"><span>نام و تعریف دقیق</span><span>مقدار و واحد</span><span>سال داده و سال انتشار</span><span>محدوده جغرافیایی</span><span>روش گردآوری</span><span>نوع داده: Fact / Calculation / Insight</span><span>نام ناشر و عنوان گزارش</span><span>پیوند منبع اصلی و شماره صفحه</span></div></article>
+      </section>
+
+      <footer class="main-footer"><span>ICT Market Intelligence</span><span>یک پروژه داده‌محور برای شناخت بازار فناوری</span><a href="https://github.com/afbazar/ict-market-intelligence" target="_blank" rel="noopener">مخزن پروژه در GitHub ↗</a></footer>
+    </main>
+  </div>
+</body>
+</html>
