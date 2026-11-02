@@ -39,7 +39,8 @@ const SOURCES = [
 const $ = (selector) => document.querySelector(selector);
 const toFa = (value) => new Intl.NumberFormat("fa-IR").format(value);
 let indicators = [];
-let reports = [];\nlet trendItems = [];
+let reports = [];
+let trendItems = [];
 
 async function loadJson(path, fallback) {
  try { const response = await fetch(path); if (!response.ok) throw new Error("HTTP " + response.status); return await response.json(); }
