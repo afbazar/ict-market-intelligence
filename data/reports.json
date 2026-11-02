@@ -70,5 +70,109 @@
       "تجارت الکترونیکی",
       "فرصت کسب‌وکار"
     ]
+  },
+  {
+    "id": "itu-idi-2024",
+    "title": "Measuring digital development: The ICT Development Index 2024",
+    "publisher": "International Telecommunication Union",
+    "publication_year": 2024,
+    "data_year": 2022,
+    "sector": "telecom",
+    "sector_name": "مخابرات و ارتباطات",
+    "source_type": "official",
+    "url": "https://www.itu.int/dms_pub/itu-d/opb/ind/D-IND-ICT_MDD-2024-3-PDF-E.pdf",
+    "description": "شاخص توسعه ICT و مقادیر ایران برای استفاده از اینترنت، دسترسی خانوار، اشتراک پهن‌باند و پوشش شبکه؛ داده بسیاری از شاخص‌ها مربوط به ۲۰۲۲ است.",
+    "tags": [
+      "IDI",
+      "ITU",
+      "پهن‌باند",
+      "پوشش شبکه"
+    ]
+  },
+  {
+    "id": "itu-datahub-iran",
+    "title": "Iran Digital Development Dashboard",
+    "publisher": "International Telecommunication Union",
+    "publication_year": 2025,
+    "data_year": 2024,
+    "sector": "telecom",
+    "sector_name": "مخابرات و ارتباطات",
+    "source_type": "official",
+    "url": "https://datahub.itu.int/data/?e=IRN",
+    "description": "داشبورد شاخص‌های اتصال ایران شامل اشتراک پهن‌باند سیار، پوشش شبکه‌های موبایل، مالکیت تلفن همراه و ترافیک.",
+    "tags": [
+      "ITU DataHub",
+      "اتصال",
+      "5G",
+      "4G"
+    ]
+  },
+  {
+    "id": "wb-ict-indicators",
+    "title": "World Development Indicators – ICT indicators for Iran",
+    "publisher": "World Bank / ITU",
+    "publication_year": 2026,
+    "data_year": 2024,
+    "sector": "telecom",
+    "sector_name": "مخابرات و ارتباطات",
+    "source_type": "official",
+    "url": "https://data.worldbank.org/country/iran-islamic-rep?view=chart",
+    "description": "سری‌های زمانی بین‌المللی اشتراک تلفن همراه، پهن‌باند ثابت و استفاده افراد از اینترنت؛ منبع داده اصلی ITU.",
+    "tags": [
+      "World Bank",
+      "WDI",
+      "سری زمانی"
+    ]
+  },
+  {
+    "id": "itu-statistics-2025",
+    "title": "ITU Statistics – Global and regional ICT data",
+    "publisher": "International Telecommunication Union",
+    "publication_year": 2025,
+    "data_year": 2025,
+    "sector": "telecom",
+    "sector_name": "مخابرات و ارتباطات",
+    "source_type": "official",
+    "url": "https://www.itu.int/en/ITU-D/Statistics/pages/stat/default.aspx",
+    "description": "دانلود سری زمانی جهانی و منطقه‌ای ۲۰۰۵ تا ۲۰۲۵ برای اشتراک‌ها، ترافیک، پوشش شبکه و استفاده از اینترنت.",
+    "tags": [
+      "ITU",
+      "داده باز",
+      "سری زمانی"
+    ]
+  },
+  {
+    "id": "datareportal-iran-2024",
+    "title": "Digital 2024: Iran",
+    "publisher": "DataReportal / Kepios",
+    "publication_year": 2024,
+    "data_year": 2024,
+    "sector": "digital",
+    "sector_name": "اقتصاد دیجیتال",
+    "source_type": "official",
+    "url": "https://datareportal.com/reports/digital-2024-iran",
+    "description": "گزارش ثانویه برای کاربران اینترنت، اتصالات موبایل، سرعت اینترنت و شبکه‌های اجتماعی؛ تعاریف و هشدارهای روش‌شناسی را باید رعایت کرد.",
+    "tags": [
+      "DataReportal",
+      "کاربران اینترنت",
+      "شبکه اجتماعی"
+    ]
+  },
+  {
+    "id": "freedom-house-iran-2024",
+    "title": "Freedom on the Net 2024: Iran",
+    "publisher": "Freedom House",
+    "publication_year": 2024,
+    "data_year": 2024,
+    "sector": "digital",
+    "sector_name": "اقتصاد دیجیتال",
+    "source_type": "official",
+    "url": "https://freedomhouse.org/country/iran/freedom-net/2024",
+    "description": "گزارش کیفیت دسترسی، محدودیت‌ها، اختلالات و محیط سیاست‌گذاری اینترنت ایران؛ منبع تحلیلی نه آمار رسمی بازار.",
+    "tags": [
+      "کیفیت اینترنت",
+      "محدودیت",
+      "سیاست‌گذاری"
+    ]
   }
 ]
