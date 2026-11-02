@@ -68,6 +68,10 @@ function renderSectors() {
 function renderSignals() { $("#signalGrid").innerHTML = SIGNALS.map(item => `<article class="signal-card"><span class="signal-icon">${item.icon}</span><div><h3>${item.title}</h3><p>${item.desc}</p><span>${item.tag}</span></div></article>`).join(""); }
 function renderOpportunities() { $("#opportunityGrid").innerHTML = OPPORTUNITIES.map((item,index) => `<article class="opportunity-card"><span class="opp-tag">فرضیه اولیه · ${toFa(index+1)}</span><h3>${item.title}</h3><p>${item.problem}</p><div class="opp-meta"><div>مشتری احتمالی: <strong>${item.buyer}</strong></div><div style="margin-top:5px">گام اعتبارسنجی: <strong>${item.validation}</strong></div></div></article>`).join(""); }
 function renderSources() { $("#sourceList").innerHTML = SOURCES.map(item => `<div class="source-item"><div><strong>${item.name}</strong><small>${item.desc}</small></div><a href="${item.url}" target="_blank" rel="noopener">وب‌سایت ↗</a></div>`).join(""); }
+function renderMetricGrid() {
+ const rows = indicators.filter(item => item.value !== null && item.value !== undefined);
+ $("#metricGrid").innerHTML = rows.length ? rows.map(item => `<article class="metric-card"><div class="metric-top"><span>${item.geography || "—"}</span><span class="metric-type">${item.data_type || "Fact"}</span></div><h3>${item.name}</h3><strong>${toFa(item.value)} <small>${item.unit || ""}</small></strong><p>سال داده: ${item.year ? toFa(item.year) : "—"} · انتشار: ${item.publication_year ? toFa(item.publication_year) : "—"}</p><div class="metric-source">${item.source_name || "منبع نامشخص"}</div><a href="${item.source_url || "#methodology"}" target="_blank" rel="noopener">منبع و جزئیات ↗</a></article>`).join("") : '<div class="empty-state-inline">شاخص مستندی برای نمایش ثبت نشده است.</div>';
+}
 function renderKpis() {
  const keys = ["market_value","digital_economy_share","active_companies","investment"];
  const map = new Map(indicators.map(item => [item.id,item]));
@@ -110,6 +114,6 @@ async function init() {
  setupNavigation(); renderSectors(); renderSignals(); renderOpportunities(); renderSources(); setupReportFilters();
  $("#sectorSearch").addEventListener("input",renderSectors); $("#sectorType").addEventListener("change",renderSectors);
  [indicators,reports] = await Promise.all([loadJson(DATA_FILES.indicators,[]),loadJson(DATA_FILES.reports,[])]);
- renderKpis(); renderReports(); renderCharts();
+ renderKpis(); renderMetricGrid(); renderReports(); renderCharts();
 }
 document.addEventListener("DOMContentLoaded",init);
