@@ -346,5 +346,76 @@
       "سیاست‌گذاری",
       "دسترسی"
     ]
+  },
+  {
+    "id": "cra-winter-1404-reported",
+    "title": "فصلنامه آماری شاخص‌های بخش ارتباطات و فناوری اطلاعات – زمستان ۱۴۰۴",
+    "publisher": "سازمان تنظیم مقررات و ارتباطات رادیویی (ارقام بازنشرشده در رسانه)",
+    "publication_year": 1405,
+    "data_year": 1404,
+    "sector": "telecom",
+    "sector_name": "مخابرات و زیرساخت",
+    "source_type": "industry",
+    "url": "https://digiato.com/iran-technology-news/fixed-internet-decline-despite-fiber-growth",
+    "description": "بازنشر شاخص‌های مشترکان ثابت و سیار، FTTx و فناوری‌های دسترسی؛ برای نسخه نهایی باید PDF اصلی فصلنامه CRA ثبت شود.",
+    "tags": [
+      "رگولاتوری",
+      "پهن‌باند ثابت",
+      "پهن‌باند سیار",
+      "فیبر نوری"
+    ]
+  },
+  {
+    "id": "itu-iran-datahub",
+    "title": "Digital Development Dashboard – Iran",
+    "publisher": "International Telecommunication Union (ITU)",
+    "publication_year": 2025,
+    "data_year": 2024,
+    "sector": "telecom",
+    "sector_name": "مخابرات و زیرساخت",
+    "source_type": "official",
+    "url": "https://datahub.itu.int/data/?e=IRN",
+    "description": "داده‌های پوشش LTE/5G، اشتراک پهن‌باند، ترافیک و مالکیت تلفن همراه ایران.",
+    "tags": [
+      "ITU",
+      "ایران",
+      "LTE",
+      "5G"
+    ]
+  },
+  {
+    "id": "isoc-pulse-iran",
+    "title": "Country Report for Iran",
+    "publisher": "Internet Society Pulse",
+    "publication_year": 2026,
+    "data_year": 2024,
+    "sector": "telecom",
+    "sector_name": "تاب‌آوری و بازار اینترنت",
+    "source_type": "research",
+    "url": "https://pulse.internetsociety.org/en/reports/IR/",
+    "description": "شاخص استفاده اینترنت، تاب‌آوری، رقابت بازار و زیرساخت اینترنت ایران.",
+    "tags": [
+      "تاب‌آوری اینترنت",
+      "ایران",
+      "رقابت"
+    ]
+  },
+  {
+    "id": "ecommerce-1403-official",
+    "title": "گزارش تجارت الکترونیکی ایران در سال ۱۴۰۳",
+    "publisher": "مرکز توسعه تجارت الکترونیکی",
+    "publication_year": 1404,
+    "data_year": 1403,
+    "sector": "ecommerce",
+    "sector_name": "تجارت الکترونیکی",
+    "source_type": "official",
+    "url": "https://ecomotive.ir/wp-content/uploads/2025/10/ec_report1403.pdf",
+    "description": "منبع پایه ارزش و تعداد معاملات، اینماد، امضای الکترونیکی و معاملات سامانه ستاد.",
+    "tags": [
+      "تتا",
+      "تجارت الکترونیکی",
+      "اینماد",
+      "ستاد"
+    ]
   }
 ]
