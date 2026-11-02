@@ -22,7 +22,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
         run: |
-          gh issue create --title "مرور هفتگی سیگنال‌های بازار ICT" --label "market-intelligence,weekly-review" --body-file - <<'EOF'
+          gh issue create --title "مرور هفتگی سیگنال‌های بازار ICT" --body-file - <<'EOF'
           ## چک‌لیست مرور هفتگی
           - [ ] بررسی خبرها و اطلاعیه‌های نهادهای رسمی
           - [ ] ثبت گزارش‌ها و داده‌های تازه با لینک منبع اصلی
@@ -39,7 +39,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
         run: |
-          gh issue create --title "به‌روزرسانی ماهانه پایگاه داده و گزارش بازار ICT" --label "market-intelligence,monthly-review" --body-file - <<'EOF'
+          gh issue create --title "به‌روزرسانی ماهانه پایگاه داده و گزارش بازار ICT" --body-file - <<'EOF'
           ## چک‌لیست به‌روزرسانی ماهانه
           - [ ] کنترل انتشار نسخه جدید گزارش‌های رسمی
           - [ ] به‌روزرسانی شاخص‌ها همراه با سال داده، سال انتشار، واحد و روش‌شناسی
