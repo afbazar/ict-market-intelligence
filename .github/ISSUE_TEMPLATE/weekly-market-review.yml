@@ -1,0 +1,26 @@
+name: گزارش هفتگی بازار ICT
+description: ثبت سیگنال‌ها، خبرها و تغییرات هفتگی
+title: "مرور هفتگی بازار ICT - "
+labels: ["market-intelligence", "weekly-review"]
+body:
+  - type: textarea
+    id: highlights
+    attributes:
+      label: مهم‌ترین تغییرات هفته
+      description: هر مورد را با لینک منبع ثبت کنید.
+    validations:
+      required: true
+  - type: textarea
+    id: signals
+    attributes:
+      label: سیگنال‌ها و پیامد برای شرکت‌ها
+  - type: textarea
+    id: opportunities
+    attributes:
+      label: فرصت‌ها یا تهدیدهای قابل بررسی
+  - type: textarea
+    id: sources
+    attributes:
+      label: منابع و گزارش‌ها
+    validations:
+      required: true
