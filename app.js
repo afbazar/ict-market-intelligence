@@ -115,9 +115,10 @@ function renderCharts() {
 }
 async function init() {
  $("#todayDate").textContent = new Intl.DateTimeFormat("fa-IR",{year:"numeric",month:"long",day:"numeric"}).format(new Date());
- setupNavigation(); renderSectors(); renderSignals(); renderOpportunities(); renderSources(); setupReportFilters();
+ setupNavigation(); renderSectors(); renderOpportunities(); renderSources(); setupReportFilters();
  $("#sectorSearch").addEventListener("input",renderSectors); $("#sectorType").addEventListener("change",renderSectors);
- [indicators,reports] = await Promise.all([loadJson(DATA_FILES.indicators,[]),loadJson(DATA_FILES.reports,[])]);
+ [indicators,reports,trendItems] = await Promise.all([loadJson(DATA_FILES.indicators,[]),loadJson(DATA_FILES.reports,[]),loadJson("data/trends.json",{items:[]}).then(data=>data.items||[])]);
+ renderSignals();
  renderKpis(); renderMetricGrid(); renderReports(); renderCharts();
 }
 document.addEventListener("DOMContentLoaded",init);
